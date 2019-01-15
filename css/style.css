@@ -1,0 +1,359 @@
+@charset "utf-8";
+#mWrap{
+    display: none;
+}
+
+body,h1,h2,h3,h4,p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    min-width: 1000px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.cf:after{
+    content: "";
+    display: block;
+    clear:both;
+}
+.inner{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*전체시작*/
+#wrap{
+    width: 100%;
+}   
+/*헤더*/
+#header{}
+#header .inner{
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 0;
+    margin-bottom: 35px;
+}
+#header h1{
+    width: 204px;
+    height: 50px;
+    background: url(../images/common/h1_samsungdisplay.gif) no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+    
+    float: left;
+}
+#header h1 a{
+    display: block;
+}
+/*gnb*/
+.gnb{
+    width: 500px;
+    float: left;
+    margin-left: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+.gnb li{
+    float: left;
+    width: 20%;
+    font-size: 14px;
+    text-align: center;
+}
+.gnb li a{
+    display: block;
+    color: #000;
+}
+.gnb li:hover .lnb{
+    display: block;
+}
+
+.lnb{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    padding-left: 20px;
+    display: none;
+}
+.lnb li{
+    width: auto;
+    font-size: 12px;
+}
+.lnb li:hover a{/* = .lnb li a:hover{}*/
+    color: #007cc0;
+}
+.lnb li a{
+    padding: 0 5px;
+}
+/*utill*/
+.utill{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -8px;
+}
+.utill li{
+    float: left;
+    font-size: 12px;
+    margin-left: 15px;
+}
+.utill li.on a{
+    font-weight: bold;
+    color: #007cc0;
+}
+.utill li a{}
+
+/*헤더끝*/
+
+/*컨테이너시작*/
+#container{}
+
+/*메인슬라이더*/
+.mainSlider{
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+.mainSlider img{
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+}
+
+.sliderLeftBtn{
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+    bottom: 30px;
+}
+.sliderLeftBtn li{
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background: url(../images/main/blet_visual.png) no-repeat;
+    text-indent: -9999px;
+    float: left;
+}
+.sliderLeftBtn li.on{
+    background-position: 0 -16px;/*background 이미지를 하나로 만들어놓은 이유는 용량이 작아서, 그래서 하나로 이렇게 이용함*/
+}
+.sliderLeftBtn li a{
+    display: block;
+}
+
+.sliderRightBtn{
+    position: absolute;
+    right: 50%;
+    margin-right: -500px;
+    bottom: 0;
+}
+.sliderRightBtn li{
+    width: 45px;
+    height: 45px;
+    margin-left: 1px;/*어차피 absolute 줘서 왼쪽에1px먹어도 상관없으므로*/
+    background: url(../images/main/btn_visual_cnt.png) no-repeat;
+    text-indent: -9999px;/*font-size:0 해도됨*/
+    float: left;
+}
+.sliderRightBtn li:nth-child(2){
+    background-position: -46px 0;
+}
+.sliderRightBtn li:last-child{
+    background-position: -92px 0;
+}
+.sliderRightBtn li a{
+    display: block;
+    height: 100%;/*display:block을 줬는데도height값이 안먹을때 height값 100%주면됨*/
+}
+/*메인슬라이더끝*/
+
+/*mainRow1*/
+.mainRow1{
+    background: #1c97fe;
+    padding: 50px;
+}
+.row1Box{
+    width: 235px;
+    margin-right: 20px;
+    float: left;
+}
+.row1Box.last{
+    margin-right: 0;
+}
+.row1Box h3{
+    color: #fff;
+    font-weight: normal;
+    font-size: 20px;
+}
+.row1Box a{}
+.row1Box a img{
+    width: 100%;
+    height: 135px;
+    margin: 10px 0;
+}
+.row1Box a p{
+    font-size: 11px;
+    color: #fff;
+    letter-spacing: -1px;
+}
+
+/*mainRow2*/
+.mainRow2{
+    background: url(../images/main/brandSite_bg.png)no-repeat;
+    background-position: 50% 0;
+    padding: 50px 0;
+}
+.mainRow2 h3{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.mainRow2 h3 img{}
+
+.mainRow2 .row2Box{
+    float: left;
+    width: 235px;
+    margin-right: 20px;
+}
+.row2Box.last{
+    margin-right: 0;
+}
+.row2Box a{
+    text-align: center;
+}
+.row2Box a img{
+    width: 100%;
+    display: block;/*사이 공백1px 없앰*/
+}
+.row2Box a p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+    margin-bottom: 25px;
+}
+.row2Box span{
+    font-size: 12px;
+}
+.row2Box .viewBtn{
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    background: #263d94;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+/*mainRow2끝*/
+
+/*mainRow3*/
+.mainRow3{
+    padding: 50px;
+}
+.mainRow3 h3{
+    text-align: center;
+    margin-bottom: 45px;
+}
+.mainRow3 h3 img{}
+
+.mainRow3 .row3Box{
+    float: left;
+    width: 320px;
+    margin-right: 20px;
+    box-shadow: 0px 2px 10px 0px #bbb;/*가로 세로 퍼지는정도 박스와의거리 컬러, 앞에 inset 적으면 안쪽에 그림자생김*/
+}
+.row3Box a{
+}
+.row3Box a img{
+    width: 100%;
+    display: block;
+}
+.row3Box.last{
+    margin-right: 0;
+}
+.row3Box .smallBox{
+    padding: 20px;
+    color: #333;
+}
+.row3Box .smallBox h4{
+    font-size: 19px;
+    margin-bottom:  5px;
+}
+.row3Box .smallBox p{
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.row3Box .smallBox .viewBtn{
+    width: 100px;
+    padding: 10px 0;
+    margin-top: 15px;
+    margin-left: 0px;
+    border-radius: 20px;
+    background: #1c97fe;
+    color: #fff;  
+    text-align: center;
+    font-size: 13px;
+}
+/*mainRow3끝*/
+
+/*푸터시작*/
+#footer{
+    border-top:1px solid #e6e6e6;
+    padding: 30px 0;
+}
+.footerLogo{
+    float: left;
+    margin-right: 50px;
+    height: 60px;
+    line-height: 60px;
+}
+.footerLogo img{}
+
+.footerInfo{
+    color: #ccc;
+    font-size: 13px;
+    float: left;
+
+}
+.footerInfo ul{
+    margin-bottom: 10px;   
+}
+.footerInfo ul li{
+    float: left;
+    font-size: 10px;
+    letter-spacing: -1px;
+}
+.footerInfo ul li:after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 6px;
+    background: #ccc;
+    margin: 0 3px;
+}
+.footerInfo ul li:last-child:after{
+    display: none;
+}
+.footerInfo ul li a{
+    color: #ccc;
+}
+
+.footerMark{
+    position: absolute;
+    right: 0;
+}
+.footerMark a{}
+.footerMark a img{}
+/*푸터끝*/
+
+/*컨테이너끝*/

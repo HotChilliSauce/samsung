@@ -1,0 +1,384 @@
+@charset "utf-8";
+/*max-width:768*/
+@media screen and (max-width:768px){
+    /*
+    body{
+        width: 100%;
+        min-width: auto;
+    }
+    #wrap{
+        width: 100%;
+    }
+    .inner{
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    
+    .gnb,.utill{
+        display: none;
+    }
+    
+    #header{
+        height: 40px;
+        position: relative;
+    }
+    #header .inner{
+        padding:0;
+    }
+    #header h1{
+        height: 40px;
+        background-size: 100%;
+    }
+    .pannelBox{
+    width: 40px;
+    height: 40px;
+    background: #10509d;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    }
+    .pannel{
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    right: 10px;
+    }
+    .pannel a{
+        display: block;
+    }
+    .pannel a span{
+        width: 20px;
+        height: 2px;
+        background: #fff;
+        display: block;
+        text-indent: -9999px;
+        margin: 5px 0;
+    }
+    .pannel a:before,.pannel a:after{
+        content: "";
+        height: 2px;
+        background: #fff;
+        display: block;
+    }
+    
+    .mainSlider{
+        width: 100%;
+    }
+    */
+    #wWrap{
+        display: none;
+    }
+    #mWrap{
+        display: block;
+    }
+    
+    body,h1,h2,h3,h4,h5,h6,p{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    body{
+        min-width: auto;
+        width: 100%
+    }
+    ul,dl,dd,dt{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    .cf:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    /*전체시작*/
+    #wrap{
+        width: 100%;
+    }
+
+    /*헤더시작*/
+    #header{}
+
+    .headerTop{
+        height: 40px;
+        position: relative;
+        background: url(../m/images/common/bg_top.gif);
+    }
+    #header h1{
+        width: 134px;
+        height: 100%;
+        background: url(../m/images/main/logo.gif) no-repeat;
+        background-position: 0 center;
+        background-size: 100%;
+        text-indent: -9999px;
+        margin-left: 10px;
+
+    }
+    .headerTop h1 a{
+        display: block;
+        height: 100%;
+    }
+
+    .pannelBox{
+        width: 40px;
+        height: 40px;
+        background: #10509d;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .pannel{
+        position: absolute;
+        top: 50%;
+        margin-top: -8px;
+        right: 10px;
+    }
+    .pannel a{
+        display: block;
+    }
+    .pannel a span{
+        width: 20px;
+        height: 2px;
+        background: #fff;
+        display: block;
+        text-indent: -9999px;
+        margin: 5px 0;
+    }
+    .pannel a:before,.pannel a:after{
+        content: "";
+        height: 2px;
+        background: #fff;
+        display: block;
+    }
+
+    .headerGnb{
+        height: 29px;
+        background: url(../m/images/common/bg_gnb.gif);
+    }
+    .headerGnb li{
+        width: 20%;
+        line-height: 27px;
+        float: left;
+        border-left: 1px solid #5a5a5a;
+        border-right: 1px solid #3f3f3f;
+        color: #c9c9c9;
+        box-sizing: border-box;
+    }
+    .headerGnb li a{
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+        color: #c9c9c9;
+        display: block;
+    }
+
+    /*컨테이너*/
+    #container{
+    }
+
+    .mainSlider{
+        height: auto;
+        position: relative;
+    }
+    .mainSlider img{
+        width: 100%;
+        position: static;
+        margin-left:0;
+    }
+
+    .mainSlider ul{
+        position: absolute;
+    }
+    .mainSlider ul li{
+        float: left;
+    }
+    .mainSlider ul li a{
+        display: block;
+    }
+
+
+
+    .sliderLbtn{
+        bottom: 10px;
+        left: 10px;
+    }
+    .sliderLbtn li{
+        width: 16px;
+        height: 16px;
+        background: url(../m/images/main/blet_visual.png) no-repeat;
+        text-indent: -9999px;
+        margin-right: 5px;
+    }
+    .sliderLbtn .on{
+        background-position: 0 -16px;
+    }
+
+    .sliderRbtn{
+        bottom: 0;
+        right: 0;
+    }
+    .sliderRbtn li{
+        width: 45px;
+        height: 45px;
+        margin-left: 1px;
+        background: url(../m/images/main/btn_visual_cnt.png) no-repeat;
+        background-position: -46px 0;
+        text-indent: -9999px;
+    }
+    .sliderRbtn li:first-child{
+        background-position: 0 0;
+    }
+    .sliderRbtn li:last-child{
+        background-position: -92px 0;
+    }
+
+    /*브랜드사이트*/
+    .brandSite{}
+    .brandSite h2{
+        width: 40%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    .brandSite h2 img{
+         width: 100%;
+    }
+
+    .site01{}
+    .site01 li{
+        position: relative;
+        margin-bottom: 2px;
+    }
+    .site01 li a{
+        display: block;
+    }
+    .site01 li a img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;/**/
+        display: block;
+    }
+
+    .site01Txt{
+        position: absolute;
+        left: 15px;
+        bottom: 15px;
+        color: #fff;
+    }
+    .site01Txt h3{
+        font-weight: normal;
+        font-size: 25px;
+    }
+    .site01Txt p{}
+
+    .site02{}
+    .site02 li{
+        width: calc(50% - 1px);
+        float: left;
+    }
+    .site02 li:nth-child(2n){
+        margin-left: 2px;
+    }
+    .site02 li:nth-child(3),.site02 li:nth-child(4){
+        margin-top: 2px;
+    }
+    .site02 li a{}
+    .site02 li a img{
+        width: 100%;
+        display: block;
+    }
+
+    .site02Txt{
+        height: 150px;
+        padding: 15px;
+        box-sizing: border-box;
+        background: #1c97fe;
+        font-size: 12px;
+        color: #fff;
+    }
+    .site02Txt h3{
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .site02Txt p{}
+
+    /*productView*/
+    .productView{}
+
+    .productView h2{
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    .productView h2 img{
+        width: 100%;
+    }
+
+    .productList{
+        overflow: hidden;
+        display: flex;
+    }
+    .productList div{
+        width: 50%;
+        float: left;
+        background: #f1f1f1;
+        position: relative;
+    }
+    .productList div img{
+        width: 100%;
+        position: absolute;/**/
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: 0 auto;/*height값이 있을때 가능*/
+        max-width:100%;
+        max-height:100%;
+    }
+    .productList div a{
+        color: #222;
+    }
+    .productList .whiteBg{
+        background: #fff;
+    }
+    .productList dl{
+        margin: 0;
+        padding: 15px;
+    }
+    .productList dl dt{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .productList dl dd{
+        font-size: 13px;
+    }
+
+    /*푸터*/
+    #footer{
+        background:url(../m/images/common/bg_footer_new.gif);
+        color:#fff;
+        font-size:10px;
+        text-align:center;
+        padding:20px 0;
+        letter-spacing: -1px;
+    }
+    .footerBtn{
+        margin-top:15px;
+    }
+    .footerBtn a{
+        color:#fff;
+        border:1px solid #fff;
+        border-radius:2px;
+        padding:5px 10px;
+        margin:0 3px;
+    }
+    
+  
+}

@@ -1,0 +1,173 @@
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    max-width: 1000px;
+    font-family: 'NotoSans',sans-serif;
+}
+ul,dl,dd,dt{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.cf:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*전체시작*/
+#wrap{
+    width:  100%;
+}
+
+/*헤더시작*/
+#header{}
+
+.headerTop{
+    height: 40px;
+    position: relative;
+    background: url(../images/common/bg_top.gif);
+}
+.headerTop h1{
+    width: 134px;
+    height: 100%;
+    background: url(../images/main/logo.gif) no-repeat;
+    background-position: 0 center;
+    background-size: 100%;
+    text-indent: -9999px;
+    margin-left: 10px;
+    
+}
+.headerTop h1 a{
+    display: block;
+    height: 100%;
+}
+
+.pannelBox{
+    width: 40px;
+    height: 40px;
+    background: #10509d;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.pannel{
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    right: 10px;
+}
+.pannel a{
+    display: block;
+}
+.pannel a span{
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    display: block;
+    text-indent: -9999px;
+    margin: 5px 0;
+}
+.pannel a:before,.pannel a:after{
+    content: "";
+    height: 2px;
+    background: #fff;
+    display: block;
+}
+
+.headerGnb{
+    height: 29px;
+    border-bottom:  1px solid #3a3939;
+}
+.headerGnb li{
+    width: 20%;
+    height: 29px;
+    line-height: 29px;
+    float: left;
+    background: #4d4d4d;
+    border-right: 1px solid #5a5a5a;
+    border-left: 1px solid #3f3f3f;
+    color: #c9c9c9;
+    box-sizing: border-box;
+}
+.headerGnb li a{
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    color: #c9c9c9;
+    display: block;
+}
+
+/*컨테이너*/
+#container{}
+
+.mainSlider{
+    height: 100%;
+    position: relative;
+}
+.mainSlider img{
+    width: 100%;
+}
+
+.mainSlider ul{
+    position: absolute;
+}
+.mainSlider ul li{
+    float: left;
+}
+.mainSlider ul li a{
+    display: block;
+}
+
+.sliderLbtn{
+    bottom: 10px;
+    left: 10px;
+}
+.sliderLbtn li{
+    width: 16px;
+    height: 16px;
+    background: url(../images/main/blet_visual.png) no-repeat;
+    background-size: 100%;
+    text-indent: -9999px;
+    margin-right: 5px;
+}
+.sliderLbtn .on{
+    background-position: 0 -16px;
+}
+
+.sliderRbtn{
+    bottom: 0;
+    right: 0;
+}
+.sliderRbtn li{
+    width: 135px;
+    height: 45px;
+    background: url(../images/main/btn_visual_cnt.png) no-repeat;
+    background-position: 0;
+    text-indent: -9999px;
+}
+
+/*mainRow1*/
+.mainRow1{}
+.mainRow1 p{}
+.mainRow1 p img{}
+.mainRow1 div{}
+.mainRow1 div a{}
+.mainRow1 div a div{}
+.mainRow1 div a div h4{}
+.mainRow1 div a div p{}
+
+.row1_1{}
+.row1_1 a{}
+.row1Text{}
+.row1Text h4{}
+.row1Text p{}
+
+
